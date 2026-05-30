@@ -52,6 +52,8 @@ update tb_regioes
 set sigla = 'CO'
 where nome = 'Centro Oeste';
 
+delete from tb_estados
+where id =  13;
 
  
  
