@@ -48,6 +48,10 @@ select nome, sigla from tb_estados where id_regiao not in (1,2);
 
 select nome from tb_estados where id_regiao between 2 and 4;
 
+update tb_regioes
+set sigla = 'CO'
+where nome = 'Centro Oeste';
+
 
  
  
