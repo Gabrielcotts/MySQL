@@ -1,28 +1,36 @@
-CREATE DATABASE cadastro;
-USE cadastro;
+create database cadastro
+default character set utf8mb4
+default collate utf8mb4_general_ci;
+use cadastro;
 
-CREATE TABLE tb_pessoa(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(45) NOT NULL,
-    data_nascimento DATE NOT NULL,
-    sexo CHAR(1) NOT NULL CHECK (sexo IN ('M','F')),
-    peso DECIMAL NOT NULL,
-    altura DECIMAL NOT NULL,
-    nacionalidade VARCHAR(20) NOT NULL
-);
+create database meuBancoTest;
+drop database meuBancoTest;
 
-CREATE TABLE tb_pessoa_fisica(
-    cpf CHAR(11) PRIMARY KEY,
-    id_pessoa INT NOT NULL UNIQUE,
-    FOREIGN KEY (id_pessoa) REFERENCES tb_pessoa(id)
-);
+create table tb_pessoa(
+id int not null auto_increment primary key,
+nome varchar(45) not null,
+nascimento date not null ,
+sexo enum('M', 'F') not null,
+peso decimal(5, 2) not null,
+altura decimal(3, 2) not null,
+nacionalidade varchar(20) default 'Brasil'
 
-CREATE TABLE tb_pessoa_juridica(
-    cnpj CHAR(14) PRIMARY KEY,
-    id_pessoa INT NOT NULL UNIQUE,
-    FOREIGN KEY (id_pessoa) REFERENCES tb_pessoa(id)
-);
+) default charset = utf8mb4;
 
-DESCRIBE tb_pessoa;
-DESCRIBE tb_pessoa_fisica;
-DESCRIBE tb_pessoa_juridica;
+create table tb_pessoa_fisica(
+cpf char(11) not null primary key,
+id_pessoa int not null unique,
+foreign key (id_pessoa) references tb_pessoa(id)
+
+) default charset = utf8mb4;
+
+create table tb_pessoa_juridica(
+cnpj char(14) not null primary key,
+id_pessoa int not null unique,
+foreign key (id_pessoa) references tb_pessoa(id)
+
+) default charset = utf8mb4;
+
+describe tb_pessoa;
+describe tb_pessoa_fisica;
+describe tb_pessoa_juridica;
