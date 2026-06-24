@@ -1,6 +1,6 @@
 create database cadastro
 default character set utf8mb4
-default collate utf8mb4_general_ci;
+default collate utf8mb4_0900_ai_ci;	
 use cadastro;
 
 create database meuBancoTest;
@@ -9,7 +9,7 @@ drop database meuBancoTest;
 create table tb_pessoa(
 id int not null auto_increment primary key,
 nome varchar(45) not null,
-nascimento date not null ,
+nascimento date not null,
 sexo enum('M', 'F') not null,
 peso decimal(5, 2) not null,
 altura decimal(3, 2) not null,
