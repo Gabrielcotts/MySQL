@@ -2,6 +2,7 @@ use cadastro;
 describe pessoa;
 describe tb_pessoa_fisica;
 describe tb_pessoa_juridica;
+describe cursos;
 select * from tb_pessoa;
 
 drop table tb_pessoa_jutidica;
