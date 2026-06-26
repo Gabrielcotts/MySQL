@@ -32,6 +32,14 @@ foreign key (id_pessoa) references tb_pessoa(id)
 
 ) default charset = utf8mb4;
 
+create table if not exists cursos(
+nome varchar(45) not null unique,
+descricao text,
+carga_horaria int unsigned,
+total_aulas int unsigned,
+ano year default '2026'
+) default charset = utf8mb4;
+
 describe tb_pessoa;
 describe tb_pessoa_fisica;
 describe tb_pessoa_juridica;
