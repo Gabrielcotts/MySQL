@@ -1,0 +1,1 @@
+alter table tb_livro add column editora varchar(80) not null;
