@@ -16,3 +16,18 @@ ano_publicacao year not null
 ) default charset = utf8mb4;
 
 describe tb_livro;
+
+create table tb_aluno( 
+ra int not null auto_increment primary key,
+nome varchar(100) not null,
+nascimento date not null,
+peso decimal(5,2) not null,
+altura decimal(3,2) not null ,
+sexo enum('M', 'F') ,
+telefone varchar(11) not null unique,
+email varchar(100) not null unique,
+ativo enum('S', 'N') default 'S'
+) default charset = utf8mb4;
+
+describe tb_aluno;
+
