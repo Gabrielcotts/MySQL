@@ -1,0 +1,13 @@
+show tables;
+select * from tb_aluno;
+select nome, plano from tb_aluno;
+select nome, plano, ativo from tb_aluno;
+select nome, ativo from tb_aluno where ativo = 'S';
+select nome, ativo from tb_aluno where ativo = 'N';
+select nome, peso from tb_aluno where peso >= 80;
+select nome, peso from tb_aluno where peso <= 80;
+select nome from tb_aluno order by nome asc;
+select nome from tb_aluno order by nome desc;
+select nome, peso from tb_aluno order by peso desc;
+select nome, peso from tb_aluno order by peso asc;
+select count(*) as total_alunos from tb_aluno;
