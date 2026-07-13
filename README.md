@@ -33,12 +33,3 @@ Este repositório faz parte da minha jornada de formação em Engenharia de Soft
 * MySQL
 * MySQL Workbench
 * SQL
-
-## Próximos passos
-
-* Desenvolvimento de consultas mais avançadas;
-* Procedures, Functions e Triggers;
-* Views;
-* Índices e otimização de consultas;
-* Integração com aplicações Java utilizando JDBC e Spring Boot;
-* Projetos completos utilizando banco de dados relacional.
