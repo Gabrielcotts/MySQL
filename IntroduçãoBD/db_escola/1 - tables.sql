@@ -12,8 +12,8 @@ cpf char(11) not null unique,
 altura decimal(3, 2) not null, 
 peso decimal(5, 2) not null,
 nacionalidade varchar(60) default 'Brasil',
-mensalidade decimal(6, 2),
+mensalidade decimal(6, 2) not null,
 curso varchar(120) not null,
-sexo enum('M', 'F')
+sexo enum('M', 'F') not null
 
 ) default char set = utf8mb4;
