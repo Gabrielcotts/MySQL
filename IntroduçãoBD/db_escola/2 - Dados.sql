@@ -25,3 +25,9 @@ values ('Gabriel Cotts Dos Anjos', '2005-02-14', '07402801121', 1.82, 92.47, 'Br
 ('Yasmin Correia Machado', '2004-06-19', '33445566779', 1.62, 55.00, 'África', 440.00, 'Jornalismo', 'F'),
 ('Zeca Pereira Santos', '2006-03-07', '44556677880', 1.72, 68.90, 'EUA', 450.00, 'Educação Física', 'M'),
 ('Alice Monteiro Rocha', '2005-10-10', '55667788991', 1.66, 59.50, 'Brasil', 460.00, 'Medicina', 'F');   
+
+insert into tb_alunos (nome, nascimento, cpf, altura, peso, nacionalidade, mensalidade, curso, sexo)
+values ('Josiane Pereira Silva', '2002-09-01', '40495117380', 1.62, 61.90, 'Colombia', 430.00, 'Matemática', 'F');
+
+insert into tb_alunos (nome, nascimento, cpf, altura, peso, nacionalidade, mensalidade, curso, sexo)
+values ('Mari Limeira da Silva', '1992-07-19', '36495111510', 1.92, 81.77, 'EUA', 430.00, 'Português', 'F');
